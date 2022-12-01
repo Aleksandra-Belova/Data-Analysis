@@ -1,13 +1,19 @@
-### Проект 1. Анализ авиа и ж/д пассажиропотока
+### Grocery store analysis
 
-**Описание данных:**  
-Данные по пассажиропотокам и ценам на билеты по двум видам транспорта: самолет и поезд.
+**Data description:**  
+Revenue, quantity and prices of orders from grocery store.  
+Data provides detalization of companies, regions, categories and products.
 
-**Описание задачи:**  
-Необходимо проанализировать показатели, их взаимосвязи и провести анализ эластичности спроса по цене.
+**Task:**  
+It is neccesary to cinduct ABC and XYZ analysis of product categories.  
 
-**Содержание исследования:**  
-1. Знакомство с данными
-2. Статистический анализ
-3. Анализ эластичности
-4. Выводы
+**Instruments:**
+Analysis and data overview is made in Jupyter Notebbok, using pandas, numpy, seaborn and matplotlib.
+Vizualization od data is made in Power BI, dashboard is presented in PDF format.
+
+**Study content:**  
+1. Data preparation
+2. Statistical data analysis
+3. ABC analysis
+4. XYZ analysis
+5. Conclusion
