@@ -3,7 +3,7 @@
 ### Details sales analysis
 
 **Data description:**  
-Revenue from details and spare parts sales.
+Revenue from details and spare parts sales.  
 Data has information about product, period and sales amount.  
 Data is presented in several files with machine unreadable format.  
 
