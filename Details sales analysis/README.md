@@ -5,15 +5,15 @@
 **Data description:**  
 Revenue from details and spare parts sales.
 Data has information about product, period and sales amount.  
-Data is presented in several files with machine unreadable format.
+Data is presented in several files with machine unreadable format.  
 
 **Task:**  
 It is neccesary to create data mart for sales in dwh and visualize data.
 
 **Instruments:**  
-Rough data preparation is made in **Jupyter Notebbok**, using only pandas.  
+Rough data preparation is made in **Jupyter Notebook**, using only pandas.  
 Building dictionary, sales mart and calculations is made using **MS SQL** in Dbeaver.
-Vizualization of data is made in **Power BI**, dashboard is presented in PDF format.
+Vizualization of data is made in **Power BI**, dashboard is presented in PDF format.  
 
 **Study content:**  
 1. Data preparation
