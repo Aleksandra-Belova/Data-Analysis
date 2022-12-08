@@ -13,7 +13,7 @@ It is neccesary to create data mart for sales in dwh and visualize data.
 **Instruments:**  
 Rough data preparation is made in **Jupyter Notebbok**, using only pandas.  
 Building dictionary, sales mart and calculations is made using **MS SQL** in Dbeaver.
-Vizualization od data is made in **Power BI**, dashboard is presented in PDF format.
+Vizualization of data is made in **Power BI**, dashboard is presented in PDF format.
 
 **Study content:**  
 1. Data preparation
