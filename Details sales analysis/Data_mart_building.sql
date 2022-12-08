@@ -39,13 +39,13 @@ order by dt
 
 delete 
 from sales_agg
-where product like '%диаграммах%'
+where product like 'РґРёР°РіСЂР°РјРјР°С…%'
 
 delete 
 from sales_agg
-where product like 'итого'
+where product like 'РёС‚РѕРіРѕ'
 
--- creating dictionary with product groups
+-- 2. Buliding dictionary
 
 drop table if exists group_dic
 
@@ -64,32 +64,32 @@ insert into group_dic
 select distinct product
 , CASE
 	when 
-		product like '%шт%'
+		product like '%С€С‚%'
 	then 
-		left(trim(product), nullif(charindex(', шт', trim(product)),0)-1)
+		left(trim(product), nullif(charindex(', С€С‚', trim(product)),0)-1)
 	when 
-		product like '%м%'
+		product like '%Рј%'
 	then 
-		left(trim(product), nullif(charindex(', м', trim(product)),0)-1)
+		left(trim(product), nullif(charindex(', Рј', trim(product)),0)-1)
 	when 
-		product like '%компл%'
+		product like '%РєРѕРјРїР»%'
 	then 
-		left(trim(product), nullif(charindex(', компл', trim(product)),0)-1)
+		left(trim(product), nullif(charindex(', РєРѕРјРїР»', trim(product)),0)-1)
 	end as product_short
 , left(trim(product), nullif(charindex(' ', trim(product)),0)-1) as product_group
 , CASE
 	when 
-		product like '%шт%'
+		product like '%С€С‚%'
 	then 
-		'шт'
+		'С€С‚'
 	when 
-		product like '%м%'
+		product like '%Рј%'
 	then 
-		'м'
+		'Рј'
 	when 
-		product like '%компл%'
+		product like '%РєРѕРјРїР»%'
 	then 
-		'компл'
+		'РєРѕРјРїР»'
 	end as unit
 from sales_agg
 
@@ -101,6 +101,8 @@ from group_dic
 select distinct * 
 from group_dic
 order by product_group
+
+-- 3. Creating data marts
 
 -- calculating total revenue for previous month, using window function
 
@@ -142,7 +144,7 @@ select *
 from sales_mart
 order by id
 
--- example of abc analysis (2021)
+-- example of abc analysis data mart (2021)
 
 drop table if exists abc_table
 
@@ -167,7 +169,7 @@ select product_group
 	WHEN round(sum(per) over(order by per desc),0) < 95
 		THEN 'B'
 	WHEN round(sum(per) over(order by per desc),0) <= 100
-		THEN 'С'	
+		THEN 'РЎ'	
 END AS kpi	
 into abc_table_final
 from abc_table
