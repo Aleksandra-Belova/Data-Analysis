@@ -1,23 +1,21 @@
 # Data Analysis Projects
 
-## Введение
+## Introduction
 
-В это репозитории собраны **проекты по анализу данных**. Среди задач, которые были реализованы в этих проектах:
-1. Обработка и очистка данных
-2. Работа с выбросами и дубликатами
-3. Статистический анализ данных
-4. Экономический анализ
-5. Машинное обучение
-6. Визуализация данных
+This repository contains **data analysis projects**.  
+Among the tasks that were implemented in the projects:
+1. Data processing and cleaning
+2. Working with outliers and duplicates
+3. Statistical data analysis
+4. Economic analysis
+5. Machine learning
+6. Data visualization
 
-## Инструменты
+## Tools
 
-Для анализа данных используется **Jupyter Notebook**.  
-Основные бибилиотеки: pandas, numpy, matplotlib, sklearn, seaborn и statsmodels.  
-Для визуализации данных используется **Power BI**.
-Результаты визуализации в рамках проекта представлены в PDF формате.
+**Jupyter Notebook** is used for data analysis.
+Core Libraries: pandas, numpy, matplotlib, sklearn, seaborn and statsmodels.
+**SQL** is used for data preparation, building mart and economic analysis.  
+**Power BI** is used for statistical data.
+The results of the proposed project are presented in PDF format.
 
-## Описание проектов
-
-### Проект 1. 
-### Проект 2. 
