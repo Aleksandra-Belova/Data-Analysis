@@ -18,7 +18,7 @@ Among the tasks that were completed in projects:
 **Jupyter Notebook** is used for data preparation, statistical and economic analysis and machine learning.  
 Main packages: pandas, numpy, matplotlib, sklearn, seaborn and statsmodels.  
 
-**SQL** is used for data preparation, building marts, calculations and analysis.
+**SQL** is used for data preparation, building marts, calculations and analysis.  
 SQL requests are made working with databases in two types of DBMS: **MS SQL** and **Postgres SQL**.
 
 **Power BI** is used for data visualization data, using **Power Query** and **DAX**.  
