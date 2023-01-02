@@ -16,7 +16,7 @@ select *
 from mrk.users_registrations
 limit 100
 
--- checkngi what currency there are in data
+-- checking what currency there are in data
 
 select distinct target_currency
 , base_currency
